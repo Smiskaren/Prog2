@@ -76,8 +76,9 @@ def main():
     print(f.get())
     f.set(7)
     print(f.get())
-    f = Heltal(5)
-    print(f.fib_py())
+    f = Heltal()
+    print(f.fib(5))
+    
         
     for n in [1000,10000,100000]:
         print(pi_estimate(n))
