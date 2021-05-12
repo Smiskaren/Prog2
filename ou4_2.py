@@ -92,7 +92,7 @@ def main():
         t1_start = pc()
         fib_py(n)
         t1_stop = pc()
-        result += t1_stop-t1_start)
+        result += t1_stop-t1_start
     x = range(30,45)
     y = result
     plt.plot(x, y)
@@ -104,7 +104,7 @@ def main():
         t1_start = pc()
         (f.fib(n))
         t1_stop = pc()        
-        result += t1_stop-t1_start)
+        result += t1_stop-t1_start
     x = range(30,45)
     y = result
     plt.plot(x, y)
