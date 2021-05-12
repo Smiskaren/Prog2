@@ -76,9 +76,6 @@ def main():
     print(f.get())
     f.set(7)
     print(f.get())"""
-
-    f = Heltal(5)
-    print(f.fib(5))
     
         
     """for n in [1000,10000,100000]:
@@ -95,6 +92,9 @@ def main():
    
     print("Elapsed time during the whole program in seconds:",
                                         t1_stop-t1_start)"""
+
+    """f = Heltal(5)
+    print(f.fib(5))
 
     resultpy = []
     resultc = []
@@ -117,10 +117,10 @@ def main():
     y2 = resultc
     plt.plot(x, y1)
     plt.plot(x, y2)
-    plt.savefig("Time_fib.png", dpi=500)
+    plt.savefig("Time_fib.png", dpi=500)"""
 
 
-    print('Fibonacci c++ n=47', f.fib(47))
+    print('Fibonacci c++ n=47:', f.fib(47))
         
 if __name__ == '__main__':
     
