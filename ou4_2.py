@@ -77,15 +77,24 @@ def main():
     f.set(7)
     print(f.get())"""
 
-    f = Heltal(5)
-    print(f.fib(5))
+    #f = Heltal(5)
+    #print(f.fib(5))
     
         
-    #for n in [1000,10000,100000]:
+    """for n in [1000,10000,100000]:
         #print(pi_estimate(n))
     
-    #for n,d in [(100000,2), (100000,11)]:
+    for n,d in [(100000,2), (100000,11)]:
         #print(hypersphere((n,d)))
+
+    t1_start = pc() 
+  
+    hypersphere((10000000,11))  
+
+    t1_stop = pc()
+   
+    print("Elapsed time during the whole program in seconds:",
+                                        t1_stop-t1_start)""""
 
     resultpy = []
     resultc = []
@@ -101,26 +110,17 @@ def main():
         (f.fib(n))
         t1_stop = pc()        
         resultc.append(t1_stop-t1_start)
-        
-        
-    #x = range(30,45)
-    print((resultpy, resultc))
-    #y = (resultpy, resultc)
-    #plt.plot(x, y)
-    #plt.savefig("Time_fib.png", dpi=500)
+            
+    x = list(range(30,46))
+    
+    y1 = resultpy
+    y2 = resultc
+    plt.plot(x, y1)
+    plt.plot(x, y2)
+    plt.savefig("Time_fib.png", dpi=500)
 
 
     print('Fibonacci c++ n=47', f.fib(47))
-
-#t1_start = pc() 
-  
-#hypersphere((10000000,11))  
-
-#t1_stop = pc()
-   
-#print("Elapsed time during the whole program in seconds:",
-                                        #t1_stop-t1_start)
-   
         
 if __name__ == '__main__':
     
