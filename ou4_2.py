@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#from heltal import Heltal
+from heltal import Heltal
 import random
 import matplotlib.pyplot as plt
 import math
@@ -62,14 +62,20 @@ def time_hypersphere(p):
 
     end = pc()
     print(f"Process took {round(end-start, 2)} seconds")
+
+def fib_py(n):
+    if n <= 1:
+        return n
+    else:
+        return(fib_py(n-1) + fib_py(n-2))
      
      
 
 def main():
-	#f = Heltal(5)
-	#print(f.get())
-	#f.set(7)
-	#print(f.get())
+	f = Heltal(5)
+	print(f.get())
+	f.set(7)
+    print(f.get())
         
     for n in [1000,10000,100000]:
         print(pi_estimate(n))
@@ -78,11 +84,11 @@ def main():
         print(hypersphere((n,d)))
 
 
-t1_start = pc() 
+#t1_start = pc() 
   
-hypersphere((10000000,11))  
+#hypersphere((10000000,11))  
 
-t1_stop = pc()
+#t1_stop = pc()
    
 print("Elapsed time during the whole program in seconds:",
                                         t1_stop-t1_start)
@@ -90,7 +96,7 @@ print("Elapsed time during the whole program in seconds:",
         
 if __name__ == '__main__':
     
-    p = [(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11)]
-    time_hypersphere(p)
+    #p = [(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11),(1000000, 11)]
+    #time_hypersphere(p)
     main()
     
