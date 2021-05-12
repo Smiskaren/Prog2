@@ -112,7 +112,7 @@ def main():
     plt.plot(x, y)
         
 
-    print('Fibonacci c++ n=47'f.fib(47))
+    print('Fibonacci c++ n=47', f.fib(47))
 
 #t1_start = pc() 
   
