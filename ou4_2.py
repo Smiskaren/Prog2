@@ -72,26 +72,51 @@ def fib_py(n):
      
 
 def main():
-    f = Heltal(5)
+    """f = Heltal(5)
     print(f.get())
     f.set(7)
-    print(f.get())
+    print(f.get())"""
+
     f = Heltal(5)
     print(f.fib(5))
     
         
-    for n in [1000,10000,100000]:
-        print(pi_estimate(n))
+    #for n in [1000,10000,100000]:
+        #print(pi_estimate(n))
     
-    for n,d in [(100000,2), (100000,11)]:
-        print(hypersphere((n,d)))
+    #for n,d in [(100000,2), (100000,11)]:
+        #print(hypersphere((n,d)))
 
+    result = []
+    for n in range(30, 45):
+        t1_start = pc()
+        fib_py(n)
+        t1_stop = pc()
+        result += t1_stop-t1_start)
+    x = range(30,45)
+    y = result
+    plt.plot(x, y)
+
+
+    
+    result = []
+    for n in range(30, 45)
+        t1_start = pc()
+        (f.fib(n))
+        t1_stop = pc()        
+        result += t1_stop-t1_start)
+    x = range(30,45)
+    y = result
+    plt.plot(x, y)
+        
+
+    print('Fibonacci c++ n=47'f.fib(47))
 
 #t1_start = pc() 
   
 #hypersphere((10000000,11))  
 
-#t1_stop = pc()
+t1_stop = pc()
    
 #print("Elapsed time during the whole program in seconds:",
                                         #t1_stop-t1_start)
