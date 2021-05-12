@@ -93,10 +93,10 @@ def main():
     print("Elapsed time during the whole program in seconds:",
                                         t1_stop-t1_start)"""
 
-    """f = Heltal(5)
+    f = Heltal(5)
     print(f.fib(5))
 
-    resultpy = []
+    """resultpy = []
     resultc = []
     for i in range(16):
         n = 30+i
