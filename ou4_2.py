@@ -90,8 +90,8 @@ def main():
 
 #t1_stop = pc()
    
-print("Elapsed time during the whole program in seconds:",
-                                        t1_stop-t1_start)
+#print("Elapsed time during the whole program in seconds:",
+                                        #t1_stop-t1_start)
    
         
 if __name__ == '__main__':
