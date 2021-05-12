@@ -26,7 +26,7 @@ void Heltal::set(int n){
 	
 int Heltal::fib(int n)
 {
-	return h_fib(n)
+	return h_fib(n);
 	}
 int Heltal::h_fib(int n)
 {
