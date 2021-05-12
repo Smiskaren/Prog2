@@ -76,7 +76,7 @@ def main():
     print(f.get())
     f.set(7)
     print(f.get())
-    f = Heltal()
+    f = Heltal(5)
     print(f.fib(5))
     
         
