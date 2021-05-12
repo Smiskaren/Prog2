@@ -77,8 +77,8 @@ def main():
     f.set(7)
     print(f.get())"""
 
-    #f = Heltal(5)
-    #print(f.fib(5))
+    f = Heltal(5)
+    print(f.fib(5))
     
         
     """for n in [1000,10000,100000]:
