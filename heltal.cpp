@@ -22,6 +22,18 @@ void Heltal::set(int n){
 	val = n;
 	}
 	
+Heltal::int fib();
+
+	
+Heltal::int h_fib(int n);
+{
+    if (n <= 1)
+        return n;
+    return fib(n-1) + fib(n-2);
+}
+ 
+	
+
 
 extern "C"{
 	Heltal* Heltal_new(int n) {return new Heltal(n);}

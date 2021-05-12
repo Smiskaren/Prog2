@@ -72,9 +72,9 @@ def fib_py(n):
      
 
 def main():
-	f = Heltal(5)
-	print(f.get())
-	f.set(7)
+    f = Heltal(5)
+    print(f.get())
+    f.set(7)
     print(f.get())
         
     for n in [1000,10000,100000]:
