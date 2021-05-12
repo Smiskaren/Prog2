@@ -94,7 +94,7 @@ def main():
     t1_stop = pc()
    
     print("Elapsed time during the whole program in seconds:",
-                                        t1_stop-t1_start)""""
+                                        t1_stop-t1_start)"""
 
     resultpy = []
     resultc = []
