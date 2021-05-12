@@ -87,30 +87,28 @@ def main():
     #for n,d in [(100000,2), (100000,11)]:
         #print(hypersphere((n,d)))
 
-    result = []
-    for i in range(15):
+    resultpy = []
+    resultc = []
+    for i in range(16):
         n = 30+i
+        print(pc())
         t1_start = pc()
         fib_py(n)
         t1_stop = pc()
-        result.append(t1_stop-t1_start)
-    x = range(30,45)
-    y = result
-    plt.plot(x, y)
-
-
-    
-    result = []
-    for i in range(15):
-        n = 30+i
+        resultpy.append(t1_stop-t1_start)
+        
         t1_start = pc()
         (f.fib(n))
         t1_stop = pc()        
-        result.append(t1_stop-t1_start)
-    x = range(30,45)
-    y = result
-    plt.plot(x, y)
+        resultc.append(t1_stop-t1_start)
         
+        
+    #x = range(30,45)
+    print((resultpy, resultc))
+    #y = (resultpy, resultc)
+    #plt.plot(x, y)
+    #plt.savefig("Time_fib.png", dpi=500)
+
 
     print('Fibonacci c++ n=47', f.fib(47))
 
@@ -118,7 +116,7 @@ def main():
   
 #hypersphere((10000000,11))  
 
-t1_stop = pc()
+#t1_stop = pc()
    
 #print("Elapsed time during the whole program in seconds:",
                                         #t1_stop-t1_start)
