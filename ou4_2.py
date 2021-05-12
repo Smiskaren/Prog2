@@ -88,7 +88,8 @@ def main():
         #print(hypersphere((n,d)))
 
     result = []
-    for n in range(30, 45):
+    for n in range(15):
+        n = 30+i
         t1_start = pc()
         fib_py(n)
         t1_stop = pc()
@@ -100,7 +101,8 @@ def main():
 
     
     result = []
-    for n in range(30, 45)
+    for i in range(15)
+        n = 30+i
         t1_start = pc()
         (f.fib(n))
         t1_stop = pc()        
