@@ -101,7 +101,7 @@ def main():
 
     
     result = []
-    for i in range(15)
+    for i in range(15):
         n = 30+i
         t1_start = pc()
         (f.fib(n))
