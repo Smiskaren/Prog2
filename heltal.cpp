@@ -32,7 +32,7 @@ int Heltal::h_fib(long int n)
 {
     if (n <= 1)
         return n;
-    return fib(long n-1) + fib(long n-2);
+    return fib(n-1) + fib(n-2);
 }
  
 extern "C"{

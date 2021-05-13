@@ -39,7 +39,6 @@ def pi_estimate(n):
         return ('Estimate PI:', pi, 'Real PI:', math.pi)
                 
 def hypersphere(l):
-    
     n,d = l        
     spherecount = 0
 
@@ -69,8 +68,6 @@ def fib_py(n):
     else:
         return(fib_py(n-1) + fib_py(n-2))
      
-     
-
 def main():
     """f = Heltal(5)
     print(f.get())
@@ -94,9 +91,8 @@ def main():
                                         t1_stop-t1_start)"""
 
     f = Heltal(5)
-    print(f.fib(5))
 
-    """resultpy = []
+    resultpy = []
     resultc = []
     for i in range(16):
         n = 30+i
@@ -119,10 +115,12 @@ def main():
     plt.plot(x, y2, label='C++')
     plt.xlabel("n")
     plt.ylabel("time")
-    plt.savefig("Time_fib.png", dpi=500)"""
+    plt.savefig("Time_fib.png", dpi=500)
 
 
     print('Fibonacci c++ n=47:', f.fib(47))
+
+    """-1323752223"""
         
 if __name__ == '__main__':
     
