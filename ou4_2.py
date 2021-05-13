@@ -115,8 +115,10 @@ def main():
     
     y1 = resultpy
     y2 = resultc
-    plt.plot(x, y1)
-    plt.plot(x, y2)
+    plt.plot(x, y1, label='Python')
+    plt.plot(x, y2, label='C++')
+    plt.xlabel("n")
+    plt.ylabel("time")
     plt.savefig("Time_fib.png", dpi=500)"""
 
 
